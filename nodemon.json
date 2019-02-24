@@ -1,0 +1,4 @@
+{
+  "watch": ["src", "spec"],
+  "ext": "ts"
+}
