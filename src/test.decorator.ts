@@ -37,7 +37,7 @@ function executeTest<I, E>(
     descriptor: PropertyDescriptor,
     config?: IConfig<I, E>,
     params?: IParams<I, E>,
-    index?: any,
+    index?: number,
 ) {
     describe(createDescription(descriptor, index, config, params), () => {
         it(createParameters(params), () => {
@@ -48,7 +48,7 @@ function executeTest<I, E>(
 
 function createDescription<I, E>(
     descriptor: PropertyDescriptor,
-    index: any,
+    index: number | undefined,
     config?: IConfig<I, E>,
     params?: IParams<I, E>,
 ) {
